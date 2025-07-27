@@ -1,0 +1,1 @@
+window.addEventListener('dragstart', (e) => {try{if(e.target.tagName == 'A') return;}catch{} e.preventDefault()}, false);

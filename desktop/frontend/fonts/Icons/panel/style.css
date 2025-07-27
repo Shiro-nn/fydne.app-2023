@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PanelIcons';
+    src: url('./panel.eot');
+    src: url('./panel.eot?#iefix') format('embedded-opentype'),
+         url('./panel.woff') format('woff'),
+         url('./panel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

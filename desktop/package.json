@@ -1,0 +1,34 @@
+{
+  "name": "fydne",
+  "version": "1.0.0",
+  "description": "fydne desktop app",
+  "main": "init.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "fydne",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^25.2.0"
+  },
+  "dependencies": {
+    "electron-acrylic-window": "^0.5.11",
+    "notify-manager-electron": "^1.3.0",
+    "qurre-socket": "^1.1.0",
+    "winreg": "^1.2.4"
+  },
+  "build": {
+    "appId": "fydne",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icons/appLogo.ico"
+    }
+  }
+}

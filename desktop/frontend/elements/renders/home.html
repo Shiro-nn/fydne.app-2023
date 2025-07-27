@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="../../js/renders/frameLoad.js"></script>
+    <script src="../../js/main.js"></script>
+
+    <link rel="stylesheet" href="../../fonts/NeonOL/style.css">
+    <link rel="stylesheet" href="../../fonts/Nunito/style.css">
+
+    <link rel="stylesheet" href="../../styles/render/home/servers.css">
+    <link rel="stylesheet" href="../../styles/render/home/tps.css">
+    
+    <script src="../../js/modules/params.js"></script>
+    <script src="../../js/modules/init.js"></script>
+
+    <style>
+::-webkit-scrollbar{
+    height: 7px;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 99px;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px 666vh #161b2d;
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(0deg, #ff2323 0%, #d445ff 100%);
+}
+::-moz-selection{
+    color:#be1c6d;
+    background:#00000040;
+    border-radius:15px;
+}
+::selection{
+    color:#be1c6d;
+    background: #00000040;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: aliceblue;
+    justify-content: center;
+}
+.top{
+    width: 100vw;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 55% min(800px, 40%);
+    margin: 20px;
+}
+.profile{
+    display: flex;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="top">
+        <div class="profile">
+
+        </div>
+        <div class="servers">
+            <h1>Сервера не найдены</h1>
+        </div>
+    </div>
+    <div class="tps">
+        <h1>TPS</h1>
+        <div class="container">
+            <canvas id="tps.area"></canvas>
+        </div>
+    </div>
+    
+    <module>
+        <script src="../../js/renders/home/online.js"></script>
+        <script src="../../js-static/chart.min.js"></script>
+        <script src="../../js/renders/home/tps.js"></script>
+    </module>
+</body>

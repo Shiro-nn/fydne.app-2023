@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <script src="../../js/main.js"></script>
+    
+    <link rel="stylesheet" href="../../styles/views/main.css">
+    <link rel="stylesheet" href="../../styles/views/loading.css">
+    <link rel="stylesheet" href="../../styles/views/main-win.css">
+    
+    <script src="../../js/modules/params.js"></script>
+    <script src="../../js/modules/init.js"></script>
+    
+    <script src="../../js/render/connect.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="loader"></div>
+        <h1>Подключение к сокету</h1>
+        <span></span>
+    </div>
+    <script>
+        socket.emit('first.logged');
+        setTimeout(() => {
+            const cont = document.querySelector('.content');
+            const span1 = document.createElement('span');
+            span1.innerHTML = 'Сокет недоступен? <a target="_blank" href="https://status.scpsl.shop">Статус сервисов</a>';
+            cont.appendChild(span1);
+            setTimeout(() => {
+                const span2 = document.createElement('span');
+                span2.innerHTML = 'Актуальные новости в нашем <a target="_blank" href="https://discord.gg/UCUBU2z">Discord</a>';
+                cont.appendChild(span2);
+            }, 5000);
+        }, 10000);
+    </script>
+</body>

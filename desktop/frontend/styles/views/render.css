@@ -1,0 +1,134 @@
+@import url('../../fonts/Nunito/style.css');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: antiquewhite;
+}
+html{
+    border-radius: 16px;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-scrollbar{height: 4px;width: 4px;}
+::-webkit-scrollbar-thumb{background-color: #be1c6d;border-radius: 99px;}
+::-webkit-scrollbar-track{background-color: #18191c;}
+
+.panel{
+    width: min(80px, 25vw);
+    height: 100vh;
+    padding: 35px 0;
+    overflow-y: auto;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.panel .button,
+.panel .fakebutton{
+    display: flex;
+    margin: 3px auto;
+    width:  35px;
+    height: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    color: #9c9ab3;
+}
+.panel .button.active{
+    background-color: rgba(240, 248, 255, 0.05);
+    color: antiquewhite;
+}
+.panel .button{
+    cursor: pointer;
+}
+.panel .button:hover{
+    background-color: rgba(240, 248, 255, 0.2);
+}
+.panel .avatar{
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50%;
+    width:  40px;
+    height: 40px;
+    min-height: 40px;
+    cursor: help;
+}
+@media (max-height: 666px) {
+    .panel{
+        display: block;
+    }
+    .panel .button,
+    .panel .fakebutton{
+        margin: 5px auto;
+    }
+}
+.panel .button .icon,
+.panel .button .icon::before{
+    display: flex;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    min-height: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.panel .button .icon::before{
+	display: inline-block;
+   font-family: 'PanelIcons';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.panel .settings .icon::before{
+    content:'\0041';
+}
+.panel .home .icon::before{
+    content:'\0042';
+}
+.panel .trade .icon::before{
+    content:'\0043';
+}
+.panel .clans .icon::before{
+    content:'\0044';
+}
+.panel .cw .icon::before{
+    content:'\0045';
+}
+.panel .downloads .icon::before{
+    content:'\0046';
+}
+.panel .logout .icon::before{
+    content:'\0047';
+}
+.panel .chats .icon::before{
+    content:'\0048';
+}
+.panel .notifies .icon::before{
+    content:'\0049';
+}
+iframe{
+    width: 100%;
+    border: 0;
+    background: rgba(240, 248, 255, 0.025);
+    border-top-left-radius: 30px;
+    /*border-bottom-left-radius: 30px;*/
+}

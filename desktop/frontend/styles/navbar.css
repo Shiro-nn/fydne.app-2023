@@ -1,0 +1,58 @@
+@import url('../fonts/NeonOL/style.css');
+
+#AppNavbarSystem *{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+body{
+    margin: 0;
+}
+#AppNavbarSystem{
+    margin: 0;
+    font-family: Roboto,sans-serif;
+    /*background-color: #383e4d28;*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 27px;
+    z-index: 999;
+    -webkit-app-region: drag;
+}
+#AppNavbarSystem .LogoText{
+    display: inline-flex;
+    font-family: NeonOL;
+    background-color: #ce54f3;
+    background-image: linear-gradient(155deg, #ff2323, #d445ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 1px 5px;
+    font-size: 22px;
+    line-height: 22px;
+}
+#AppNavbarSystem .ButtonsSelector{
+    -webkit-app-region: no-drag;
+    position: absolute;
+    display: inline-flex;
+    right: 0;
+    height: 100%;
+}
+#AppNavbarSystem .AppButon{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+}
+#AppNavbarSystem .AppButon:hover{
+    background: #282e38;
+}

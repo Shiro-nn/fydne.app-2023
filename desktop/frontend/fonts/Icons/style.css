@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Icons';
+    src: url('./Icons.eot');
+    src: url('./Icons.eot?#iefix') format('embedded-opentype'),
+         url('./Icons.ttf') format('truetype'),
+         url('./Icons.svg#Icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Icons';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.icon-new-window:before{content:'\0041';}

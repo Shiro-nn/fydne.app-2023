@@ -1,0 +1,63 @@
+.servers{
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid rgba(209, 233, 255, 0.4);
+    background-color: #0A0A0A57;
+    padding-top: 25px;
+}
+.servers h1{
+    background-color: #ce54f3;
+    background-image: linear-gradient(155deg, #ff2323, #d445ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 100%;
+    user-select: none;
+    margin: 0;
+}
+.servers .server{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    padding: 0 10px 15px 10px;
+    background-color: #0D1117;
+    box-shadow: 3px 3px 8px #00000088;
+    text-align: center;
+    margin: 0 20px 25px 20px;
+}
+.server-name{
+    height: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: NeonOL;
+    color: aliceblue;
+    user-select: none;
+}
+.server-online{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-size: 18px;
+    position: relative;
+    background-color: #18202b;
+    padding: 4px 4px;
+    border-radius: 10px;
+}
+.server-online span{
+    font-weight: 500;
+    color: aliceblue;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.server-online act{
+    background: linear-gradient(90deg,#d445ff, #ff2323);
+    display: block;
+    border-radius: 7px;
+}
